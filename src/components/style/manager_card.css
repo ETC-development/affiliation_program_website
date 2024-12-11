@@ -1,0 +1,28 @@
+.manager-card{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+}
+
+.manager-image{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.card-background {
+    grid-row: 2/3;
+    z-index: 1;
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.card-infos{
+    grid-row: 2/3;
+    z-index: 2;
+    grid-column: 1/2;
+}
+.social{
+    grid-row: 2/3;
+    z-index: 2;
+    grid-column: 1/2;
+}

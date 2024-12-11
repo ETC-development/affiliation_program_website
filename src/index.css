@@ -8,3 +8,21 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@layer utilities {
+    /* Gradient Border */
+    .border-gradient-green {
+        border-width: 4px; /* Adjust border width */
+        border-style: solid;
+        border-image-source: linear-gradient(90deg, rgba(1,159,79,1) 0%, rgba(14,69,37,1) 100%);
+        border-image-slice: 1;
+        border-radius: 12px;
+    }
+
+    /* Gradient Text */
+    .text-gradient-green {
+        background: linear-gradient(90deg, rgba(1,159,79,1) 0%, rgba(14,69,37,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
