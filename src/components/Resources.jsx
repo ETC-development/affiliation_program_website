@@ -53,7 +53,7 @@ function Resources() {
     ];
 
 
-    const api_url = 'http://localhost:3000/api/files';
+    const api_url = import.meta.env.VITE_DRIVE_API_URL;
     const [folders, setFolders] = useState(null);
     const [error, setError] = useState(null);
     const [currentFolder, setCurrentFolder] = useState(null);
