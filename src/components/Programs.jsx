@@ -26,8 +26,7 @@ function Programs() {
                     throw error;
                 }
 
-                console.log('data :')
-                console.log(data);
+
                 setPrograms(data);
                 setCurrentProgram(data[programIndex]);
             } catch (err) {
@@ -57,7 +56,6 @@ function Programs() {
                 {
                     (() => {
                         if (loading) {
-                            console.log(loading);
                             return <p className={`w-full text-center self-center justify-self-center text-xl lg:text-2xl font-nasalization text-white`}>Loading...</p>;
                         }
                         else if(programs === null || programs.length === 0) {
@@ -93,8 +91,6 @@ function Programs() {
                                                 for (let i = 0; i < currentProgram?.skills.length; i++){
                                                     returnable.push(currentProgram?.skills[i].skill);
                                                 }
-                                                console.log("skills");
-                                                console.log(currentProgram?.skills[0].skill);
                                                 return returnable;
                                             }) ()}
                                         />
