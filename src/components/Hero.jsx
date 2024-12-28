@@ -14,10 +14,18 @@ function Hero() {
                 </div>
 
                 <div className="buttons flex flex-row gap-x-8 mx-auto mt-10">
-                    <div className="cursor-pointer text-white bg-gradient-green rounded-lg flex justify-center items-center font-nasalization px-9 py-3 text-sm md-text-lg xl:text-xl xl:px-11 xl:py-4 xl:rounded-xl">
+                    <div className="cursor-pointer text-white bg-gradient-green rounded-lg flex justify-center items-center font-nasalization px-9 py-3 text-sm md-text-lg xl:text-xl xl:px-11 xl:py-4 xl:rounded-xl"
+                        onClick={() => {
+                            window.open("https://etc-club.vercel.app/", '_blank');
+                        }}
+                    >
                         <p>Discover ETC</p>
                     </div>
-                    <div className="cursor-pointer text-white border-2 border-fontGreen rounded-lg flex justify-center items-center font-nasalization px-9 py-3 text-sm md-text-lg xl:text-xl xl:px-11 xl:py-4 xl:rounded-xl">
+                    <div className="cursor-pointer text-white border-2 border-fontGreen rounded-lg flex justify-center items-center font-nasalization px-9 py-3 text-sm md-text-lg xl:text-xl xl:px-11 xl:py-4 xl:rounded-xl"
+                        onClick={() => {
+                            window.open("https://tr.ee/TFL6w7TxMl", "_blank");
+                        }}
+                    >
                         <p>Follow Us</p>
                     </div>
                 </div>
